@@ -40,6 +40,10 @@ ul.ticket-list li span {
     height: 30px;
     width: 100%;
 }
+ul.ticket-list li span:not(.filled):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
 ul.ticket-list li span.selected {
     background-color: yellow;
 }
