@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cinema Ticket App!</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+        <div class="screen-wrapper">Screen</div>
+        <div class="row mt-4" id="js-ticket-wrapper">
+            <div class="col-3">
+                <ul class="two-column ticket-list">
+                    <li><span data-id="1"></span></li>
+                    <li><span data-id="2"></span></li>
+                    <li><span data-id="3"></span></li>
+                    <li><span data-id="4"></span></li>
+                    <li><span data-id="5"></span></li>
+                    <li><span data-id="6"></span></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="four-column ticket-list">
+                    <li><span data-id="7"></span></li>
+                    <li><span data-id="8"></span></li>
+                    <li><span class="filled" data-id="9"></span></li>
+                    <li><span data-id="10"></span></li>
+                    <li><span data-id="11"></span></li>
+                    <li><span data-id="12"></span></li>
+                    <li><span data-id="13"></span></li>
+                    <li><span data-id="14"></span></li>
+                    <li><span data-id="15"></span></li>
+                    <li><span data-id="16"></span></li>
+                    <li><span data-id="17"></span></li>
+                    <li><span data-id="18"></span></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="two-column ticket-list">
+                    <li><span data-id="19"></span></li>
+                    <li><span data-id="20"></span></li>
+                    <li><span data-id="21"></span></li>
+                    <li><span data-id="22"></span></li>
+                    <li><span data-id="23"></span></li>
+                    <li><span data-id="24"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-4">
+            <select id="js-movie" class="form-select">
+                <option value="1">Movie 1</option>
+                <option value="2">Movie 2</option>
+                <option value="3">Movie 3</option>
+            </select>
+        </div>
+        <div class="row" id="ticket-info">
+            <div class="col-4"><span class="ticket-select"></span> Selected</div>
+            <div class="col-4"><span class="ticket-empty"></span> Empty</div>
+            <div class="col-4"><span class="ticket-filled"></span> Filled</div>
+        </div>
+        <div class="mt-4 text-center">
+            Fee for <span id="js-total-ticket">0</span> seats: $<span id="js-total-price">0</span>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
